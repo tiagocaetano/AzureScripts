@@ -1,0 +1,69 @@
+{
+"if":{
+    <condition | logical operator>
+}
+
+"then":
+"effect" :"deny | audit | append | auditifnoexist | deployifnoExist | disabled"
+}
+
+}
+
+
+/*supported logical operatores and conditions 
+
+"not"
+"Alloff"
+"anyoff"
+
+//conditions 
+
+"equals":"value"
+"notequals":value"
+"like":"value"
+"notlike":"value"
+"match":"value"
+"notmatch":"value"
+"contains":"value"
+"notcontains":"value"
+"in":["value1","value2"]
+"notin":["value1","value2"]
+"containskey":"keyname"
+"notcontainskey":"keyname"
+"exist":"bool"
+
+
+// Basic template JSON 
+// First thing we have to thing is what properties my template will have, what resources will be applied and Policy rule 
+// And remeber JSON format is always key pair value 
+
+{
+
+    //array
+    "properties":{
+    "mode":"all"  // mode of this polivy is set to all, determinies which resources will be evalauted  
+    "displaName": "My first rule template"
+    "description":"any descriptions for your rule"
+    "policyrule":{
+
+         // the conditions rulle ( the Magic place )    
+        "if":{
+
+
+    }
+
+    "then":{
+
+
+    }
+
+
+    }
+
+
+}
+
+
+
+
+}
